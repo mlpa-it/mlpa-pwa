@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build" IgnorableNamespaces="uap mp build"> 
+	<Identity Name="30379MLPA.MLPA" Publisher="CN=AE710D82-6AF9-4A56-BBD2-861E6EF1CD09" Version="0.0.0.0" ProcessorArchitecture="neutral"/> 
+	<mp:PhoneIdentity PhoneProductId="2b2778bf-3325-c869-f8e3-71010134d494" PhonePublisherId="00000000-0000-0000-0000-000000000000"/> 
+
+	<build:Metadata>
+		<build:Item Name="GenerationTool" Version="pwabuilder-api"/>
+		<build:Item Name="GenerationToolVersion" Version="2.0.1-rc.0"/>
+    <build:Item Name="PlatformId" Value="windows10"/>
+    <build:Item Name="PlatformPackage" Value="pwabuilder-windows10"/>
+    <build:Item Name="PlatformVersion" Version="2.0.3-rc.1"/>
+		<build:Item Name="GeneratedFrom" Value="Website Wizard"/>
+		<build:Item Name="GenerationDate" Value="2018-07-11 11:20:29 Z"/>
+		<build:Item Name="GeneratedURL" Value="https://webhost3.mlpa.net/cms/superpwa-manifest.json"/>
+	</build:Metadata>
+
+	<Properties> 
+		<DisplayName>MLPA</DisplayName> 
+    <PublisherDisplayName>MLPA</PublisherDisplayName>
+    <Logo>images\StoreLogo.png</Logo> 
+	</Properties> 
+
+	<Dependencies> 
+		<TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0"/> 
+	</Dependencies> 
+
+	<Resources>
+	<Resource Language="en-us"/> 
+	 </Resources> 
+
+	<Applications> 
+		<Application Id="MLPA" StartPage="https://webhost3.mlpa.net/cms/?utm_source=superpwa"> 
+			<uap:VisualElements DisplayName="MLPA" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" Description="Business Technology Consultants, Australia" BackgroundColor="#FFFFFF"> 
+        
+				<uap:SplashScreen Image="images\SplashScreen.png"/> 
+				 
+				<uap:InitialRotationPreference> 
+					<uap:Rotation Preference="portrait"/> 
+				</uap:InitialRotationPreference> 
+			</uap:VisualElements> 
+			<uap:ApplicationContentUriRules>
+				<uap:Rule Type="include" WindowsRuntimeAccess="none" Match="http://*"/>				
+				<uap:Rule Type="include" WindowsRuntimeAccess="none" Match="https://*"/>
+				
+				<uap:Rule Type="include" WindowsRuntimeAccess="all" Match="https://webhost3.mlpa.net/cms/"/>
+			</uap:ApplicationContentUriRules>
+		</Application> 
+	</Applications> 
+
+	<Capabilities>
+		<Capability Name="internetClient"/>
+		
+	</Capabilities>
+
+</Package>
