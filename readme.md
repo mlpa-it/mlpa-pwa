@@ -1,3 +1,5 @@
+This PWA is a dev/test pwa implementation of the MLPA website
+
 PWA Builder Generated AppX
 ==========================
 
